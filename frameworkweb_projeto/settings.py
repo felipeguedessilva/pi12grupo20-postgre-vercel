@@ -13,8 +13,9 @@ SECRET_KEY = 'django-insecure-ufs=jfsjdf=x(w0u-iz4jy*4caig&$_buk%+u0ir40i=e!5vz&
 
 DEBUG = True
 
-#ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app','.now.sh']
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app','.now.sh']
+
+#ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -56,6 +57,7 @@ TEMPLATES = [
 ]
 
 #WSGI_APPLICATION = 'frameworkweb_projeto.wsgi.application'
+
 WSGI_APPLICATION = 'frameworkweb_projeto.wsgi.app'
 
 STATIC_URL = '/static/'
@@ -73,7 +75,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
 #STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles', 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 
 #DATABASES = {
