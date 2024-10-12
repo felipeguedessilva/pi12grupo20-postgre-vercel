@@ -15,8 +15,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app','.now.sh']
 
-#ALLOWED_HOSTS = ['*']
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -56,34 +54,12 @@ TEMPLATES = [
     },
 ]
 
-#WSGI_APPLICATION = 'frameworkweb_projeto.wsgi.application'
-
 WSGI_APPLICATION = 'frameworkweb_projeto.wsgi.app'
 
 STATIC_URL = '/static/'
-
-#STATICFILES_DIRS = [
-#    os.path.join(BASE_DIR, 'static\css'),
-#    os.path.join(BASE_DIR, 'static\favicon'),
-#    os.path.join(BASE_DIR, 'static\img'),
-#    os.path.join(BASE_DIR, 'static\js'),
-#    os.path.join(BASE_DIR, 'static'),
-#    os.path.join(BASE_DIR, "frameworkweb_projeto\static"),
-    # '/var/www/static/',
-#    ]
-#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
+MEDIA_URL = '/media/'
 STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
-#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
-
-
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-#}
 
 DATABASES = {
     'default': {
