@@ -56,8 +56,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'frameworkweb_projeto.wsgi.app'
 
-STATIC_URL = '/static/'
+STATIC_URL = '/staticfiles/'
 MEDIA_URL = '/media/'
+
 STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
